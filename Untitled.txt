@@ -1,0 +1,233 @@
+import coldfusion.runtime.AttributeCollection;
+import coldfusion.runtime.CFPage;
+import coldfusion.runtime.CfJspPage;
+import java.util.Map;
+import javax.servlet.jsp.JspContext;
+import javax.servlet.jsp.JspWriter;
+import javax.servlet.jsp.tagext.Tag;
+
+public final class cfcomponent2ecfc1522140681
+  extends CFPage
+{
+  public static final Object metaData;
+  private static Map _implicitMethods;
+  
+  public final Object getMetadata()
+  {
+    return metaData;
+  }
+  
+  public final void _setImplicitMethods(Map implicitMethods)
+  {
+    _implicitMethods = implicitMethods;
+  }
+  
+  protected final Object runPage()
+  {
+    ;
+    JspWriter out = this.pageContext.getOut();Tag parent = this.parent;return null;
+  }
+  
+  public cfcomponent2ecfc1522140681()
+  {
+    this.hasPseudoConstructor = false;
+  }
+  
+  public final Map _getImplicitMethods()
+  {
+    return _implicitMethods;
+  }
+  
+  static
+  {
+    metaData = new AttributeCollection(new Object[] { "Name", "component" });
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import coldfusion.runtime.AttributeCollection;
+import coldfusion.runtime.CFPage;
+import coldfusion.runtime.CfJspPage;
+import coldfusion.runtime.LocalScope;
+import coldfusion.runtime.Variable;
+import coldfusion.runtime.VariableScope;
+import coldfusion.tagext.GenericTag;
+import coldfusion.tagext.lang.ImportedTag;
+import coldfusion.tagext.lang.ModuleTag;
+import coldfusion.tagext.sql.QueryTag;
+import java.io.Writer;
+import javax.servlet.jsp.JspContext;
+import javax.servlet.jsp.JspWriter;
+import javax.servlet.jsp.tagext.Tag;
+
+public final class cftest2ecfm1008532442
+  extends CFPage
+{
+  private Variable TEST123;
+  private Variable TEST12;
+  static final Class class$coldfusion$tagext$sql$QueryTag;
+  static final Class class$coldfusion$tagext$lang$ImportedTag;
+  public static final Object metaData;
+  
+  public final Object getMetadata()
+  {
+    return metaData;
+  }
+  
+  protected final void bindPageVariables(VariableScope varscope, LocalScope locscope)
+  {
+    super.bindPageVariables(varscope, locscope);
+    this.TEST123 = bindPageVariable("TEST123", varscope, locscope);
+    this.TEST12 = bindPageVariable("TEST12", varscope, locscope);
+  }
+  
+  protected final Object runPage()
+  {
+    ;
+    ;
+    ;
+    ;
+    ;
+    ;
+    ;
+    ;
+    ;
+    ;
+    ;
+    ;
+    ;
+    JspWriter out = this.pageContext.getOut();Tag parent = this.parent;QueryTag query0 = (QueryTag)_initTag(class$coldfusion$tagext$sql$QueryTag, 0, parent);_setCurrentLineNo(1);query0.setDatasource("testdata");query0.setName("test123");query0.hasEndTag(true);
+    try
+    {
+      if ((mode0 = query0.doStartTag()) != 0)
+      {
+        try
+        {
+          out = _pushBody(query0, mode0, out);
+          do
+          {
+            out.write(" select * from test ");
+          } while (query0.doAfterBody() != 0);
+        }
+        catch (Throwable localThrowable1)
+        {
+          jsr 6;throw localThrowable1;
+        }
+        t7 = returnAddress;out = _popBody(mode0, out);ret;
+      }
+      if (query0.doEndTag() == 5) {
+        return null;
+      }
+    }
+    catch (Throwable localThrowable2)
+    {
+      query0.doCatch(localThrowable2);
+    }
+    catch (Throwable localThrowable3)
+    {
+      jsr 6;throw localThrowable3;
+    }
+    Object t11 = returnAddress;query0.doFinally();ret;QueryTag query1 = (QueryTag)_initTag(class$coldfusion$tagext$sql$QueryTag, 1, parent);_setCurrentLineNo(6);query1.setDbtype("query");query1.setName("test12");query1.hasEndTag(true);
+    try
+    {
+      if ((mode1 = query1.doStartTag()) != 0)
+      {
+        try
+        {
+          out = _pushBody(query1, mode1, out);
+          do
+          {
+            out.write(" select * from test123 where id>5 ");
+          } while (query1.doAfterBody() != 0);
+        }
+        catch (Throwable localThrowable4)
+        {
+          jsr 6;throw localThrowable4;
+        }
+        t15 = returnAddress;out = _popBody(mode1, out);ret;
+      }
+      if (query1.doEndTag() == 5) {
+        return null;
+      }
+    }
+    catch (Throwable localThrowable5)
+    {
+      query1.doCatch(localThrowable5);
+    }
+    catch (Throwable localThrowable6)
+    {
+      jsr 6;throw localThrowable6;
+    }
+    Object t19 = returnAddress;query1.doFinally();ret;ImportedTag module2 = (ImportedTag)_initTag(class$coldfusion$tagext$lang$ImportedTag, 2, parent);_setCurrentLineNo(10);module2.setName("dump", "/WEB-INF/cftags", null, true);Object t21 = _autoscalarize(this.TEST123);CfJspPage._validateTagAttrValue("cfdump", "var", t21, null);module2.setAttributecollection(new AttributeCollection(new Object[] { "var", t21 }));module2.hasEndTag(false);
+    if (CfJspPage._emptyTcfTag(module2)) {
+      return null;
+    }
+    ImportedTag module3 = (ImportedTag)_initTag(class$coldfusion$tagext$lang$ImportedTag, 3, parent);_setCurrentLineNo(12);module3.setName("dump", "/WEB-INF/cftags", null, true);Object t23 = _autoscalarize(this.TEST12);CfJspPage._validateTagAttrValue("cfdump", "var", t23, null);module3.setAttributecollection(new AttributeCollection(new Object[] { "var", t23 }));module3.hasEndTag(false);
+    if (CfJspPage._emptyTcfTag(module3)) {
+      return null;
+    }
+    return null;
+  }
+  
+  static
+  {
+    class$coldfusion$tagext$sql$QueryTag = Class.forName("coldfusion.tagext.sql.QueryTag");
+    class$coldfusion$tagext$lang$ImportedTag = Class.forName("coldfusion.tagext.lang.ImportedTag");
+    metaData = new AttributeCollection(new Object[0]);
+  }
+}

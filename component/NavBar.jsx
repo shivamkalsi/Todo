@@ -25,10 +25,10 @@ class NavBar extends React.Component
           <ul className="menu">
             <li className="menu-text">Whether App</li>
             <li>
-              <Link to="/test">test</Link>
+              <Link to="/Whether">Whether</Link>
             </li>
             <li>
-              <Link to="/whether">whether</Link>
+              <Link to="/TodoApp">TodoApp</Link>
             </li>
           </ul>
         </div>

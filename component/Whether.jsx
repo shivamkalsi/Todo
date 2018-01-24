@@ -19,8 +19,9 @@ class Whether extends React.Component
   }
   handelApiCall(location)
   {
+    
     var that=this;
-    this.setState({isloding:true});
+    this.setState({isloding:true, iserror:false});
     OpenWhether.getTemp(location).then(function(temp){
       that.setState({
         location:location,

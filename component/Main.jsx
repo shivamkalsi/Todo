@@ -3,6 +3,7 @@ var ReactDom=require('react-dom');
 var {Router}=require('react-router');
 var TestMain=require('./TestMain.jsx');
 import Whether  from './Whether.jsx';
+import TodoApp  from './TodoApp.jsx';
 import $ from 'jquery';
 import 'foundation-sites';
 import 'foundation-sites/js/foundation.core';
@@ -24,6 +25,7 @@ $(document).foundation();
 
 ReactDom.render(<BrowserRouter>
 					<TestMain>
-							<Route path="/" component={Whether} />
+							<Route path="/Whether" component={Whether} />
+							<Route path="/TodoApp" component={TodoApp} />
 					</TestMain>
 				</BrowserRouter>,document.getElementById('app'));

@@ -6,10 +6,7 @@ module.exports={
 		jquery:'jQuery',
 		foundation:'Foundation',
 	},
-	"browser": {
-    "jquery": "./node_modules/jquery/dist/jquery.min.js",
-    "foundation": "./node_modules/foundation-sites/dist/foundation.js"
-  },
+
 	plugins:[
 		new webpack.ProvidePlugin({
 		$:'jquery',
